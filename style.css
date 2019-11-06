@@ -5,12 +5,10 @@
 }
 
 body {
+    height: 100%;
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 
 main {
@@ -24,7 +22,9 @@ main {
     flex-direction: column;
     flex: 1 1 auto;
     padding: 20px;
-    background-color: lightgreen;
+    background-color: #181818;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .top-right {
@@ -34,6 +34,15 @@ main {
 }
 
 .top-right ul {
+    list-style-type: none;
+}
+
+.top-left {
+    color: white;
+    text-align: left;
+}
+
+.top-left ul {
     list-style-type: none;
 }
 
@@ -111,10 +120,11 @@ a {
 .main-bottom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+    max-width: 1480px;
 }
 
 .main-bottom .blocco {
@@ -136,9 +146,24 @@ a {
 .sidebar {
     flex: 0 1 260px;
     padding: 20px;
-    background-color: yellow;
+    background-color: #050505;
 }
+
+.sidebar img {
+    object-fit: contain;
+    object-position: center;
+    width: 150px;
+}
+
+.fixed {
+    position: fixed;
+}
+
 footer {
-    background: #FED0D1;
+    background: #282828;
     padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+     width: 100%;
 }

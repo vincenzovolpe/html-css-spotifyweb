@@ -44,6 +44,18 @@ main {
 
 .top-left ul {
     list-style-type: none;
+    padding-top: 20px;
+}
+
+.align-ul {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.align-ul span {
+    margin-left: 16px;
 }
 
 a {
@@ -163,7 +175,6 @@ footer {
     background: #282828;
     padding: 20px;
     position: fixed;
-    left: 0;
     bottom: 0;
-     width: 100%;
+    width: 100%;
 }

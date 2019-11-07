@@ -45,6 +45,11 @@ main {
 .top-left ul {
     list-style-type: none;
     padding-top: 20px;
+    margin-bottom: auto;
+}
+
+.top-left-menu span, .bottom-left-menu span {
+    display: none;
 }
 
 .align-ul {
@@ -56,6 +61,26 @@ main {
 
 .align-ul span {
     margin-left: 16px;
+}
+
+.bottom-left-menu figure{
+    background-image: url("https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=10203896941171729&height=200&width=200&ext=1575630380&hash=AeTnqSxMZwHY5nTN");
+    width: 28px;
+    height: 28px;
+}
+
+.avatar {
+    border-radius: 50%;
+    background-color:
+    rgba(0,0,0,.15);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.border {
+    border-top: 1px solid #404040;
+    padding-top: 10px;
 }
 
 a {
@@ -209,5 +234,8 @@ footer {
         flex: 0 0 260px;
         padding: 20px;
         background-color: #050505;
+    }
+    .top-left-menu span, .bottom-left-menu span {
+        display: block;
     }
 }

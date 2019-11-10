@@ -263,10 +263,50 @@ footer {
     padding: 0 16px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer-left {
     width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left-foto {
+    background-image: url('https://i.scdn.co/image/d485908b0ed0de2877196e73a2b3a1c46447690f');
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.footer-left-text {
+    margin:  0 14px;
+}
+
+.footer-left-text p{
+    color: #fff;
+}
+
+.footer-left-text p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-left-text small {
+    color: #b3b3b3;
+}
+
+.footer-left-text small:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-left-icon {
+    color: #b3b3b3;
+}
+
+.footer-left-icon:hover {
+    color: #fff;
 }
 
 .footer-center {
@@ -275,7 +315,28 @@ footer {
 
 .footer-right {
     width: 30%;
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    justify-content: flex-end;
 }
+
+.footer-right-flex {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.volume {
+    align-items: center;
+    display: flex;
+}
+
+.volume .slider {
+    width: 84px;
+}
+
+
 
 .player {
     display: flex;
@@ -362,7 +423,6 @@ footer {
   border-radius: 50%;
   cursor: pointer;
 }
-
 
 
 @media (min-width: 480px) {

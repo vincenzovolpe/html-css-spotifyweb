@@ -267,37 +267,18 @@ footer {
 }
 
 .footer-left {
-    width: 30%;
     display: flex;
     align-items: center;
+}
+
+.footer-left-text {
+    display: none;
 }
 
 .footer-left-foto {
     background-image: url('https://i.scdn.co/image/d485908b0ed0de2877196e73a2b3a1c46447690f');
     width: 56px;
     height: 56px;
-    cursor: pointer;
-}
-
-.footer-left-text {
-    margin:  0 14px;
-}
-
-.footer-left-text p{
-    color: #fff;
-}
-
-.footer-left-text p:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.footer-left-text small {
-    color: #b3b3b3;
-}
-
-.footer-left-text small:hover{
-    color: #fff;
     cursor: pointer;
 }
 
@@ -309,16 +290,11 @@ footer {
     color: #fff;
 }
 
-.footer-center {
-    width: 40%;
+.fa-heart {
+    margin: 0 14px;
 }
 
-.footer-right {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    color: #b3b3b3;
-    justify-content: flex-end;
+.footer-center {
 }
 
 .footer-right-flex {
@@ -336,7 +312,13 @@ footer {
     width: 84px;
 }
 
+.fa-list:hover, .fa-desktop:hover, .fa-volume-up:hover {
+    color: #fff;
+}
 
+.fa-list, .fa-desktop {
+    display: none;
+}
 
 .player {
     display: flex;
@@ -348,7 +330,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
-    width: 224px;
+    width: 100%;
 }
 
 .control-button {
@@ -444,6 +426,23 @@ footer {
         font-size: xxx-large;
         padding: 0;
     }
+
+    .footer-left {
+        width: 30%;
+    }
+
+    .footer-center {
+        width: 40%;
+    }
+
+    .footer-right {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        color: #b3b3b3;
+        justify-content: flex-end;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -458,6 +457,13 @@ footer {
         padding: 35px;
     }
 
+    .fa-list, .fa-desktop {
+        display: block;
+    }
+
+    .player-bottoni {
+        width: 224px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -481,6 +487,29 @@ footer {
 
     .top-left img {
         display: block;
+    }
+
+    .footer-left-text {
+        margin:  0 14px;
+        display: block;
+    }
+
+    .footer-left-text p{
+        color: #fff;
+    }
+
+    .footer-left-text p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .footer-left-text small {
+        color: #b3b3b3;
+    }
+
+    .footer-left-text small:hover{
+        color: #fff;
+        cursor: pointer;
     }
 }
 @media (min-width: 1781px) {
